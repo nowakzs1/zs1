@@ -1,0 +1,37 @@
+body {
+    background-color: aqua;
+}
+
+#ListaFilmy {
+    list-style: circle;
+}
+
+#ListaDokumenty {
+    list-style: square;
+}
+
+#ListaGwiazdy {
+    list-style-image: url("../Img/Star.png")
+}
+
+#ST {
+    list-style: none
+
+}
+
+a:link {
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:visited {
+    color: crimson;
+}
+
+a:hover {
+    color: darkcyan;
+}
+
+a:active {
+    color: white;
+}
