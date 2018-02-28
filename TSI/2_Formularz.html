@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularze</title>
+    <link rel="stylesheet" href="Style/form.css">
+
+</head>
+<!--POST - Dane są wysyłane w nagłówkach http
+    Duże pliki hasła i takie takie
+    GET - Małe formularze i takie takie-->
+<body>
+    <form action="szymon.html" method="get" id="form1">
+     <fieldset>
+         <legend>Dane :</legend>
+
+          <input type="text" name="imie" size="10" maxlength="5" autofocus placeholder="Imie" id="imie">Imie<br><br>
+
+          <input type="text" name="Nazwisko" size="10" maxlength="5" autofocus placeholder="Nazwisko" id="nazwisko">Nazwisko<br><br>
+
+          <input type="text" name="szkola" placeholder="Zs1" readonly size="5" id="szkola">Szkoła<br><br>
+
+          <input type="password" name="haslo" id="haslo" size="10" placeholder="Hasło" maxlength="20">Hasło<br><br>
+
+
+          <input type="submit" id="przycisk" value="Zatwierdź">
+
+        <input type="reset">
+
+     </fieldset>
+    </form>
+    <br>
+
+
+    <form action="sandra.php" id="form2">
+       <Fieldset>
+        <legend>Wybierz kolor:</legend>
+        <input type="radio" name="kolor" value="biały">biały<br>
+        <input type="radio" name="kolor" value="czerwony" checked>czerwony<br>
+        <input type="radio" name="kolor" value="zielony">zielony<br>
+
+        <input type="submit" name="przycisk2">
+
+        </Fieldset>
+    </form>
+
+    <br>
+    <form id="form3">
+      <Fieldset>
+          <legend>Imię</legend>
+
+        <input type="radio" name="imie" value="Janusz" checked>Janusz<br>
+        <input type="radio" name="imie" value="Maciej" >Maciej<br>
+        <input type="radio" name="imie" value="Marjan">Marjan<br>
+        <input type="radio" name="imie" value="Mieczysław">Mieczysław<br>
+
+        <input type="submit" name="przycisk3" value="Wyślij Imię">
+        </Fieldset>
+    </form>
+    <br>
+    <form>
+       <input type="checkbox" value="rower" name="pojazd1">Posiadam rower<br>
+       <input type="checkbox" value="samochod" name="pojazd2">Posiadam samochód<br>
+       <input type="checkbox" value="samolot" name="pojazd3">Posiadam samolot<br>
+
+       <input type="submit" name="przycisk 4">
+
+    </form>
+    <br>
+    <form>
+        <input type="color" name="color">
+        <input type="submit" name="przycisk5">
+
+    </form>
+</body>
+</html>
