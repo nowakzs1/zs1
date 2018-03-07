@@ -53,8 +53,25 @@
     <meter low="30" high="42" max="50" value="10" optimum="36">Temperatura Ciała</meter>
     <hr>
     <form name="inny">
-        <input autofocus placeholder="imie" autocomplete="off">
+        <input autofocus required name="imie" placeholder="Imie" autocomplete="on">
+        <input autofocus name="imie" placeholder="Nazwisko" pattern="([a-z]|[A-Z]){2,20}" autocomplete="off"><br><br>
+
+        <input type="tel" name="telefon" pattern="([0-9]|[-]|[ ]){9,11}" placeholder="123 456 789"><br><br>
         <input type="submit">
     </form>
+    <hr>
+    <h3>Wiele Opcji Do Wyboru Mordo</h3>
+    <label>Owoce:
+        <datalist id="owoc">
+            <select name="owoce">
+                <option value="jabłko">Jabłko</option>
+                <option value="banan">Banan</option>
+                <option value="pomelo">Pomelo</option>
+
+            </select>
+        </datalist>
+        <input type="text" name="fruits" list="owoc"><br><br>
+        <input type="text" name="fruits" list="owoc" multiple>
+    </label>
 </body>
 </html>
