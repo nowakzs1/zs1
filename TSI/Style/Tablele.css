@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Verdana;
+    color: #112334
+}
+table {
+    width: 600px;
+}
+th, td {
+    padding: 7px 10px 10px 10px;
+}
+
+th{
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+    font-size: 90%;
+    border-bottom: 2px solid #34ad34;
+    border-top: 1px solid #999;
+}
+
+.even {
+    background-color: #34ad34;
+    text-align: center;
+}
+.java {
+    background-color: #34ad34;
+}
+.js {
+    background-color: #34ad34;
+}
+.enej {
+    background-color: #a7dda7;
+    text-align: center;
+}
+.zarobki {
+    background-color: green;
+}
+.srednie {
+    background-color: #34b534;
+    text-align: center;
+}
