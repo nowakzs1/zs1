@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     var Panstwo = prompt('Podaj kraj', 'Polska,Niemcy,Rosja');
+        switch (Panstwo){
+            case 'Polska' :
+                var Pilka = prompt('Czy lubisz piłke nożną?', 'Tak/Nie');
+                document.write('Pierwszą stolicą Polski jest Gniezno <br>')
+                if (Pilka == 'tak'){
+                    document.write('Najlepsza druzyna piłkarska w Polsce to Lech Poznan');
+                }else{
+                    document.write('Nie lubisz pilki noznej');
+                }
+            break;
+            case 'Niemcy' :
+                var Pilka = prompt('Czy lubisz piłke nożną?', 'Tak/Nie');
+                document.write('Stolicą Niemiec jest Berlin<br>')
+                if (Pilka == 'tak'){
+                    document.write('Najlepsza druzyna piłkarska w Niemczech jest Bayern');
+                }else{
+                    document.write('Nie lubisz pilki noznej');
+                }
+            break;
+            case 'Rosja' :
+                var Pilka = prompt('Czy lubisz piłke nożną?', 'Tak/Nie');
+                document.write('Stolicą Rosji jest Moskwa <br>')
+                if (Pilka == 'tak'){
+                    document.write('Najlepsza druzyna piłkarska w Rosji CSKA Moskwa');
+                }else{
+                    document.write('Nie lubisz pilki noznej');
+                }
+            default:
+                alert('Zły kraj')
+        }
+
+    </script>
+</body>
+</html>

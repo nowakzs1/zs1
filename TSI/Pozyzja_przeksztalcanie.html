@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pozycja Elementu</title>
+    <style>
+        #rodzic{
+            position: relative;
+            /*perspective: 300px;*/
+            height: 400px;
+            background-color: red;
+        }
+        #rodzic > div {
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            line-height: 100px;
+            font-size: 20px;
+            text-align: center;
+            color: white;
+            background-color: black;
+            /*transform: rotateY(40deg)*/
+            transform: perspective(300px) rotateY(25deg);
+        }
+        #dziecko1 {
+            left: 100px;
+            top: 30px;
+            transform: rotateY(40deg)
+        }
+        #dziecko2 {
+            left: 100px;
+            top: 150px;
+            transform: rotateY(40deg)
+        }
+        #dziecko3 {
+            left: 100px;
+            bottom: 30px;
+            transform: rotateY(40deg)
+        }
+        #dziecko4 {
+            right: 100px;
+            top: 30px;
+            transform: rotateY(-40deg)
+        }
+        #dziecko5 {
+            right: 100px;
+            top: 150px;
+            transform: rotateY(-40deg)
+        }
+        #dziecko6 {
+            right: 100px;
+            bottom: 30px;
+            transform: rotateY(-40deg)
+        }
+
+    </style>
+</head>
+<body>
+    <div id="rodzic">
+        <div id="dziecko1">1</div>
+        <div id="dziecko2">2</div>
+        <div id="dziecko3">3</div>
+        <div id="dziecko4">4</div>
+        <div id="dziecko5">5</div>
+        <div id="dziecko6">6</div>
+    </div>
+</body>
+</html>
