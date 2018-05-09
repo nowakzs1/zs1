@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pętle</title>
+</head>
+<body>
+    <script>
+        /*for(var i=0; i<=100; i++){
+            document.write(i + "<br>");
+        }*/
+        /*for(var i=5; i<=100; i=i+5){
+            document.write(i + "<br>");
+        }*/
+
+        //zad.1
+        /*for(var i=3; i<=20; i++){
+            if (i%2 == 0)
+            document.write(i + "<br>");
+        }*/
+        //zad.2 Liczby nieparzyste z przedziału od 20 do -1 w formacie "Liczba nieparzysta:.."
+        /*for(var i=20; i>=-1; i--){
+            if (i%2 != 0)
+            document.write("Liczba nieparzysta: " + i + "<br>")
+        }*/
+        //zad.3 wartośc początkową podaje uzytkownik.Wybiera za pomoca przycisku radio czy dane mają byc wyswietlane rosnaco czy malejąco . wyswietl dane posort. rosnąco
+
+        document.write('<input type="radio" checked name="sort"  id="r"> rosnąco');
+        document.write('<input type="radio" name="sort" id="m"> malejąco <br>');
+       var x = prompt("Podaj wartość początkową")
+        var y = prompt("Prompt wartość końcową")
+        var text="";
+
+        function spr(){
+            if(r.checked=true)
+                for(var i=x; i<=y; i++){
+            document.write(i + "<br>")
+            }else if (m.checked=true){
+                for(var i=x; i>=y; i--){
+            document.write(i + "<br>")
+            }
+        }
+         wyswietl.textContent = text;
+        }
+
+
+
+        r.addEventListener('click', spr);
+        m.addEventListener('click', spr);
+
+    </script>
+</body>
+</html>
