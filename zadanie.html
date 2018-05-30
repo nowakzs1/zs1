@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularze</title>
+</head>
+<body>
+    <form name="form1" >
+        <input type="submit" value="wp" id="anuluj">
+        <input type="submit" value="onet" id="zapisz">
+        <input type="submit" value="gmail" id="gmail">
+    </form>
+    <script>
+        function AnulujZmiany() {
+            /*alert(;anuluj)*/
+            document.forms['form1'].action='https://www.wp.pl/';
+            document.forms['form1'].submit();
+        }
+
+        function ZapiszZmiany() {
+            document.forms['form1'].action='https://www.onet.pl/';
+            document.forms['form1'].submit();
+        }
+
+        function gmail() {
+            document.forms['form1'].action='zapisz.php';
+            document.forms['form1'].submit();
+        }
+
+        gmail.addEventListener('click', gmail);
+        anuluj.addEventListener('click', AnulujZmiany);
+        zapisz.addEventListener('click', ZapiszZmiany);
+
+    </script>
+
+</body>
+</html>
