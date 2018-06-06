@@ -1,37 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Formularze</title>
+    <title>Zadanie 3</title>
+    <link rel="stylesheet" href="Style/Siema.css"
 </head>
 <body>
-    <form name="form1" >
-        <input type="submit" value="wp" id="anuluj">
-        <input type="submit" value="onet" id="zapisz">
-        <input type="submit" value="gmail" id="gmail">
+   <div id="kolor">
+    <form name="form1">
+        <input type="button" value="Onet" id="onet">
+        <input type="button" value="Interia" id="interia">
+        <input type="button" value="WP" id="wp">
     </form>
+    </div>
+
     <script>
-        function AnulujZmiany() {
-            /*alert(;anuluj)*/
-            document.forms['form1'].action='https://www.wp.pl/';
-            document.forms['form1'].submit();
-        }
-
-        function ZapiszZmiany() {
-            document.forms['form1'].action='https://www.onet.pl/';
-            document.forms['form1'].submit();
-        }
-
-        function gmail() {
-            document.forms['form1'].action='zapisz.php';
-            document.forms['form1'].submit();
-        }
-
-        gmail.addEventListener('click', gmail);
-        anuluj.addEventListener('click', AnulujZmiany);
-        zapisz.addEventListener('click', ZapiszZmiany);
+    function Onet()  {
+        document.forms['form1'].action = 'http://www.onet.pl';
+        document.forms['form1'].submit();
+    }
+    function Interia()  {
+        document.forms['form1'].action = 'http://www.interia.pl';
+        document.forms['form1'].submit();
+    }
+    function Wp()  {
+        document.forms['form1'].action = 'http://www.wp.pl';
+        document.forms['form1'].submit();
+    }
+    onet.addEventListener('click', Onet);
+    interia.addEventListener('click', Interia);
+    wp.addEventListener('click', Wp);
 
     </script>
-
 </body>
 </html>

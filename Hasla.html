@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hasla</title>
+</head>
+<body>
+   <form name="form1" id="form1">
+       Hasło:<input name="haslo" type="password" id="pass1" maxlength="20"><br><br>
+       Powtórz hasło:<input name="phaslo" type="password" id="pass2" maxlength="20"><br><br>
+       <input id="anuluj" name="anuluj"type="submit" value="Anuluj">
+       <input id="zapisz" name="zapisz" type="submit" value="Zapisz" disabled>
+       <input id="update" name="update" type="submit" value="update">
+
+   </form>
+   <script>
+       function odblokuj() {
+        if (pass1.value.length >= 8 && pass1.value == pass2.value){
+            zapisz.disabled = false;
+        }else{
+            zapisz.disabled = true;
+        }
+    }
+     function anulujHaslo(){
+         document.forms['form1'].action = './anuluj.html';
+     }
+     function zapiszHaslo(){
+         document.forms['form1'].action = './zapisz.html';
+     }
+    function update1(){
+        document.forms['form1'].action = './update.php';
+    }
+
+
+
+       anuluj.addEventListener('click', anulujHaslo);
+       zapisz.addEventListener('click', zapiszHaslo);
+       pass1.addEventListener('input', odblokuj);
+       pass2.addEventListener('input', odblokuj);
+       update.addEventListener('click', update1);
+
+    </script>
+
+</body>
+</html>
